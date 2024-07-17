@@ -1,16 +1,16 @@
 import type { MetaFunction } from "@remix-run/node";
+import { AboutMePage } from "~/pages/about-me-page";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Martin Bibyakov - JavaScript Developer" },
+    {
+      name: "description",
+      content: "Hi, I'am Martin, JavaScript developer based in Poznań, Poland.",
+    },
   ];
 };
 
 export default function Index() {
-  return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to updated develop branch</h1>
-    </div>
-  );
+  return <AboutMePage />;
 }
