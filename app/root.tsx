@@ -7,6 +7,9 @@ import {
 } from "@remix-run/react";
 import { PageWrapper } from "./components/page-wrapper";
 import "./tailwind.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
