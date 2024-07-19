@@ -7,6 +7,7 @@ import {
   faLinkedinIn,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
+import { externalLinks } from "~/shared/consts/url";
 
 const links = [
   {
@@ -16,22 +17,22 @@ const links = [
     openInSameTab: true,
   },
   {
-    href: "https://www.linkedin.com/in/martin-bibyakov-0a8363260/",
+    href: externalLinks.linkedIn,
     title: "Go to my LinkedIn profile",
     icon: faLinkedinIn,
   },
   {
-    href: "https://medium.com/@martinbibyakov",
+    href: externalLinks.medium,
     title: "Go to my Medium profile",
     icon: faMedium,
   },
   {
-    href: "https://stackoverflow.com/users/26421804/martin",
+    href: externalLinks.stackOverflow,
     title: "Go to my StackOverflow profile",
     icon: faStackOverflow,
   },
   {
-    href: "https://github.com/letMartin",
+    href: externalLinks.github,
     title: "Go to my GitHub profile",
     icon: faGithub,
   },
