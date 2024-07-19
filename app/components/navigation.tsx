@@ -13,7 +13,7 @@ const links = [
     href: "/",
     title: "Go to Home Page",
     icon: faHome,
-    openInNewTab: false,
+    openInSameTab: true,
   },
   {
     href: "https://www.linkedin.com/in/martin-bibyakov-0a8363260/",
@@ -40,8 +40,13 @@ const links = [
 export function Navigation() {
   return (
     <nav className="mb-28 text-center">
-      {links.map(({ href, title, icon, openInNewTab }) => (
-        <Link href={href} title={title} openInNewTab={openInNewTab} key={href}>
+      {links.map(({ href, title, icon, openInSameTab }) => (
+        <Link
+          key={href}
+          href={href}
+          title={title}
+          target={openInSameTab ? "_self" : "_blank"}
+        >
           <IconWrapper className="mx-1">
             <FontAwesomeIcon
               size="lg"

@@ -1,6 +1,16 @@
 import { HeadingTwo, IconWrapper } from "~/shared/components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
+import {
+  basics,
+  building,
+  testing,
+  versionControl,
+  buildTools,
+  deployment,
+  additional,
+} from "./tech-stack-consts";
+import { SkillsSet } from "./skills-set";
 
 export function TechStack() {
   return (
@@ -11,10 +21,14 @@ export function TechStack() {
         </IconWrapper>
         Tech Stack
       </HeadingTwo>
-      <p>Todo</p>
-      <ul>
-        <li>Todo</li>
-      </ul>
+
+      <SkillsSet title="Basics" skills={basics} />
+      <SkillsSet title="Building" skills={building} />
+      <SkillsSet title="Testing" skills={testing} />
+      <SkillsSet title="Version Control" skills={versionControl} />
+      <SkillsSet title="Build Tools" skills={buildTools} />
+      <SkillsSet title="Deployment and Infrastructure" skills={deployment} />
+      <SkillsSet title="Additional Skills" skills={additional} />
     </section>
   );
 }
