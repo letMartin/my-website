@@ -9,7 +9,9 @@ export function PageWrapper({ children }: PageWrapperProps) {
   return (
     <div className="w-full h-screen bg-slate-100 pt-6">
       <Navigation />
-      <main className="mx-auto max-w-3xl bg-white rounded-lg">{children}</main>
+      <main className="mx-auto max-w-3xl bg-white rounded-lg shadow-md">
+        {children}
+      </main>
     </div>
   );
 }
