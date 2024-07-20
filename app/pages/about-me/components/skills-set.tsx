@@ -16,11 +16,11 @@ function SectionWrapper({ children }: { children: React.ReactNode }) {
 
 type SkillSetProps = {
   title: string;
-  moreLink?: string;
+  morePath?: string;
   skills: { name: string; icon: string }[];
 };
 
-export function SkillsSet({ title, skills, moreLink }: SkillSetProps) {
+export function SkillsSet({ title, skills, morePath }: SkillSetProps) {
   return (
     <SectionWrapper>
       <HeadingThree>{title}</HeadingThree>
@@ -32,9 +32,13 @@ export function SkillsSet({ title, skills, moreLink }: SkillSetProps) {
             {name}
           </li>
         ))}
-        {moreLink && (
+        {morePath && (
           <li className="flex items-center">
-            <Link href="/" title="see more" target="_self">
+            <Link
+              href={morePath}
+              target="_self"
+              title="Read more about these skills"
+            >
               <>
                 More
                 <FontAwesomeIcon

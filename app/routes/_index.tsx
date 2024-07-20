@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { AboutMePage } from "~/pages/about-me-page";
+import { AboutMePage } from "~/pages/about-me/about-me-page";
 import { externalLinks } from "~/shared/consts/url";
 import { getCanonicalLink } from "~/shared/utils/get-canonical-link";
 

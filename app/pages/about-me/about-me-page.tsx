@@ -3,13 +3,13 @@ import { ProfileImage, AboutMe, Header, TechStack } from "./components";
 
 export function AboutMePage() {
   return (
-    <div className="p-4">
+    <article className="py-4 mt-28">
       <ProfileImage />
       <Header />
       <Divider />
       <AboutMe />
       <Divider />
       <TechStack />
-    </div>
+    </article>
   );
 }

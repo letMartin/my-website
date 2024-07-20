@@ -23,12 +23,16 @@ export function TechStack() {
       </HeadingTwo>
 
       <SkillsSet title="Basics" skills={basics} />
-      <SkillsSet title="Building" skills={building} />
-      <SkillsSet title="Testing" skills={testing} />
+      <SkillsSet title="Building" skills={building} morePath="/building" />
+      <SkillsSet title="Testing" skills={testing} morePath="/testing" />
       <SkillsSet title="Version Control" skills={versionControl} />
       <SkillsSet title="Build Tools" skills={buildTools} />
       <SkillsSet title="Deployment and Infrastructure" skills={deployment} />
-      <SkillsSet title="Additional Skills" skills={additional} />
+      <SkillsSet
+        title="Additional Skills"
+        skills={additional}
+        morePath="/additional"
+      />
     </section>
   );
 }

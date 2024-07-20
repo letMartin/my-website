@@ -40,7 +40,7 @@ const links = [
 
 export function Navigation() {
   return (
-    <nav className="mb-28 text-center">
+    <nav className="mb-8 text-center">
       {links.map(({ href, title, icon, openInSameTab }) => (
         <Link
           key={href}
