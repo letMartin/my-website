@@ -32,8 +32,8 @@ export const meta: MetaFunction = () => {
           },
           {
             "@type": "ProfilePage",
-            dateCreated: "2024-07-19T12:34:00",
-            dateModified: "2024-07-19T14:53:00",
+            dateCreated: "2024-07-19T12:34:00Z",
+            dateModified: "2024-07-19T14:53:00Z",
             mainEntity: {
               "@type": "Person",
               name: "Martin Bibyakov",

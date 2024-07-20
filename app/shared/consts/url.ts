@@ -1,4 +1,4 @@
-export const domainWithProtocol = "https://www.example.com";
+export const domainWithProtocol = "https://jsdeveloper.pl";
 
 export const externalLinks = {
   github: "https://github.com/letMartin",

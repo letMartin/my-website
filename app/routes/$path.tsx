@@ -37,7 +37,7 @@ export const loader: LoaderFunction = async ({
 };
 
 export const meta: MetaFunction = ({ params }) => {
-  const canonicalLink = getCanonicalLink(params.path as string);
+  const canonicalLink = getCanonicalLink(("/" + params.path) as string);
   const skillType = getSkillType(params.path);
 
   if (!skillType) {
@@ -50,11 +50,14 @@ export const meta: MetaFunction = ({ params }) => {
     ];
   }
 
+  const title = `My experience and tools for ${skillType} web applications`;
+  const description = `Get to know more about my experience and the tools I use for ${skillType} web applications.`;
+
   return [
-    { title: `Tools I use for ${skillType} web applications` },
+    { title },
     {
       name: "description",
-      content: `Get to know more about the tools I use for ${skillType} web applications.`,
+      content: description,
     },
     canonicalLink,
     {
@@ -77,6 +80,27 @@ export const meta: MetaFunction = ({ params }) => {
                 item: canonicalLink.href,
               },
             ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": canonicalLink.href,
+            },
+            headline: title,
+            description: description,
+            author: {
+              url: domainWithProtocol,
+              "@type": "Person",
+              name: "Martin Bibyakov",
+            },
+            publisher: {
+              "@type": "Person",
+              name: "Martin Bibyakov",
+            },
+            datePublished: "2024-07-20T14:03:00Z",
+            dateModified: "2024-07-20T14:03:00Z",
           },
         ],
       },
