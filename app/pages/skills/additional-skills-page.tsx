@@ -49,7 +49,7 @@ export function AdditionalSkillsPage() {
             for consistent URL structure.
           </li>
           <li>
-            Properly formatted Robots.txt file to control search engine
+            Properly formatted robots.txt file to control search engine
             crawlers.
           </li>
           <li>
@@ -101,9 +101,9 @@ export function AdditionalSkillsPage() {
         <HeadingTwo>Conclusion</HeadingTwo>
         <p>
           By focusing on both performance and SEO, I have successfully optimized
-          web applications to achieve high rankings and. This comprehensive
-          approach ensures that websites are fast, accessible, and well-ranked
-          in search engines.
+          web applications to achieve high rankings. This comprehensive approach
+          ensures that websites are fast, accessible, and well-ranked in search
+          engines.
         </p>
       </section>
     </article>

@@ -27,7 +27,7 @@ export function SkillsSet({ title, skills, morePath }: SkillSetProps) {
       <SkillsWrapper>
         {skills.map(({ name, icon }) => (
           <li key={name} className="flex flex-col items-center gap-1">
-            <img src={icon} alt={name} className="w-16 h-16" />
+            <img src={icon} alt={`${name} logo`} className="w-16 h-16" />
             <span className="ml-1" />
             {name}
           </li>
@@ -37,7 +37,7 @@ export function SkillsSet({ title, skills, morePath }: SkillSetProps) {
             <Link
               href={morePath}
               target="_self"
-              title="Read more about these skills"
+              title="Read more about my experience"
             >
               <>
                 More
